@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Bulgaria</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section class="header">
+        <nav>
+            <a href="index.htm"><img src="images/logo.png"style="padding-top: 15px;padding-left: 5px;"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                 <ul>
+                    <li><a class="bqlo" href="">HOME</a></li>
+                    <li><a class="zeleno" href="">ABOUT</a></li>
+                    <li><a class="cherveno" href="./Nature/nature.htm">NATURE</a></li>
+                    <li><a class="bqlo" href="./History/history.htm">HISTORY</a></li>
+                    <li><a class="zeleno" href="./Culture/cult.htm">CULTURE</a></li>
+                    <li><a class="cherveno" href="./Cuisine/cuisine.htm">CUISINE</a></li>
+                 </ul>
+            </div>
+            <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <div class="text-box">
+                <h1>Bulgaria</h1>
+                <p>Uncover Bulgaria's hidden treasures! 
+                From breathtaking landscapes to vibrant cities, 
+                immerse yourself in a world of ancient history,<br>  
+                cultural wonders, and gastronomic delights.<br></p>
+                <a href="" class="buttn">Click here to know more and embark on an unforgettable journey through Bulgaria.</a>
+            </div>
+        </section>
+
+        <section class="ofrs">
+            <h1>Bulgaria's beauty</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin neque sit amet </p>
+            
+            <div class="row">
+                <div class="ofrs-col-bqlo">
+                    <h3>Forests</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin neque sit amet ligula rutrum, vel pharetra lectus faucibus.
+                     Nullam elementum tempor velit in vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                </div>
+                <div class="ofrs-col-zeleno">
+                    <h3>Mountains</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin neque sit amet ligula rutrum, vel pharetra lectus faucibus.
+                     Nullam elementum tempor velit in vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                </div>
+                <div class="ofrs-col-cherveno">
+                    <h3>Monuments and more</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin neque sit amet ligula rutrum, vel pharetra lectus faucibus.
+                     Nullam elementum tempor velit in vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="more">
+            <h1>What Bulgaria offers</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin neque sit amet ligula rutrum, vel pharetra lectus faucibus.
+                Nullam elementum tempor velit in vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            
+                <div class="row">
+                    <div class="more-col">                        
+                        <a href="./History/history.htm"><img src="./images/history.jpg">
+                        <div class="layerbql"><h3>HISTORY</h3></div>
+                        </a>                       
+                    </div>
+                    <div class="more-col">
+                        <a href="./Culture/cult.htm"><img src="./images/culture.jpg">
+                        <div class="layerzel"><h3>CULTURE</h3></div>
+                        </a>                     
+                    </div>
+                    <div class="more-col">
+                        <a href="Cuisine/cuisine.htm"><img src="images/cuisine.jpg">
+                        <div class="layercher"><h3>CUISINE</h3></div>
+                        </a>
+                    </div>
+                </div>    
+        </section>
+            <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+            </script>
+    </body>
+</html>
