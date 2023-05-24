@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 .header{
     min-height: 100vh;
     width: 100%;
@@ -10,6 +13,25 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    overflow: hidden;
+}
+.header-cuisine{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(30, 4, 4, 0.7),rgba(30, 4, 4, 0.7)),url(./images/kebapche.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.headerhistory{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 30, 4, 0.7),rgba(4, 30, 4, 0.7)),url(./images/historymain.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
 nav{
     display: flex;
@@ -100,48 +122,48 @@ a.cherveno:hover::after{
     position: relative; 
     cursor: pointer;
 }
+.buttnkebapche{
+    font-style: bold;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative; 
+    cursor: pointer;
+}
+.buttnistoriq{
+    font-style: bold;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative; 
+    cursor: pointer;
+}
+.buttnistoriq:hover{
+    border: 1px solid #36f472;
+    background: #36f472;
+    transition: 0.5s;
+}
 .buttn:hover{
     border: 1px solid #f44336;
     background: #f44336;
     transition: 0.5s;
 }
+.buttnkebapche:hover{
+    border: 1px solid #3662f4;
+    background: #649dff;
+    transition: 0.5s;
+}
 nav .fa{
     display: none;
 }
-
-@media(max-width : 700px){
-    .text-box h1{
-        font-size: 25px;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        position: absolute;
-        background: #f44336;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-    nav .fa{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        padding: 30px;
-    }
-    .row{
-        flex-direction: column;
-    }
-}
-
 .ofrs{
     width: 80%;
     margin: auto;
@@ -153,8 +175,8 @@ h1{
     font-weight: 600;
 }
 p{
-    color: #777;
-    font-size: 14px;
+    color: #070707;
+    font-size: 17px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
@@ -262,7 +284,7 @@ h3{
     width: 100%;
     font-weight: 500;
     color: #000000;
-    font-size: 26px;
+    font-size: 40px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -274,7 +296,7 @@ h3{
     width: 100%;
     font-weight: 500;
     color: #000000;
-    font-size: 26px;
+    font-size: 40px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -286,7 +308,7 @@ h3{
     width: 100%;
     font-weight: 500;
     color: #000000;
-    font-size: 26px;
+    font-size: 40px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -305,4 +327,134 @@ h3{
 .layercher:hover h3{
     bottom: 49%;
     opacity: 1;
+}
+.maincut{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    flex-direction: column;
+}
+.maincut h1{
+    font-size: 45px;
+}
+.maincut h3{
+    font-size: 45px;
+}
+.kebapcheimg{
+    display: block;
+    flex-direction: row;
+    flex-basis: 31%;  
+    border-radius: 30px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    position:relative;
+}
+.kebapcheparagraph{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-style: oblique;
+}
+.shopskaimg{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 31%;  
+    border-radius: 30px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.shopska{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: row;
+    align-items: center;
+    font-style: oblique;
+}
+.maincut h3{    
+    text-shadow: #000000;
+}
+.ofrsparagr{
+    font-style: normal;
+    color: #000000;
+    text-decoration: underline;
+}
+.ofrstxt{
+    font-style: oblique;
+}
+
+@media(max-width : 700px){
+    .text-box h1{
+        font-size: 25px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .kebapcheparagraph {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .kebapcheimg{
+        height: 453px;
+        width: 346px;
+    }
+    .shopska{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .shopskaimg{
+        height: 453px;
+        width: 346px;
+    }
+    p{
+        color: #070707;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
 }

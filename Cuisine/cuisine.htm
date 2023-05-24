@@ -1,13 +1,104 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./../main.css'>
-</head>
-<body>
-    Working
-</body>
+    <head>
+        <meta charset='utf-8'>
+        <title>Bulgaria</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./../main.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section class="header-cuisine">
+        <nav>
+            <a href="./../index.htm"><img src="./../images/logo.png"style="padding-top: 15px;padding-left: 5px;"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                 <ul>
+                    <li><a class="bqlo" href="./../index.htm">HOME</a></li>
+                    <li><a class="zeleno" href="#">ABOUT</a></li>
+                    <li><a class="cherveno" href="./../Nature/nature.htm">NATURE</a></li>
+                    <li><a class="bqlo" href="./../History/history.htm">HISTORY</a></li>
+                    <li><a class="zeleno" href="./../Culture/cult.htm">CULTURE</a></li>
+                    <li><a class="cherveno" href="#">CUISINE</a></li>
+                 </ul>
+            </div>
+            <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <div class="text-box">
+                <h1>Bulgaria's cuisine</h1>
+                <p>Taste the flavors of Bulgaria! Explore a culinary paradise where Eastern European and Mediterranean influences merge.<br> 
+                From savory pastries to refreshing salads and sizzling kebabs, Bulgarian cuisine will delight your senses. 
+                Discover the secrets of yogurt and rakia, and indulge in traditional soups and mouthwatering dishes.<br></p>
+                <a href="#mainsec" class="buttnkebapche">Click here to embark on a delicious journey through Bulgarian cuisine.</a>
+            </div>
+        </section>
+
+
+        <section class="mainsec" id="mainsec">
+            <div class="maincut">
+                <h1 style="color: rgba(255, 0,0, 0.7); font-size: 35px;">Main cutlery</h1> <br>    
+                <h3 style="text-decoration: underline; font-size: 25px;">The legendary kebapche</h3>
+                <p class="kebapcheparagraph">
+                    Originating from the rich culinary traditions of Bulgaria, the kebapche is a legendary and beloved dish that has become a staple in Bulgarian cuisine. <br>
+                    Often described as a type of grilled sausage, the kebapche holds a special place in the hearts and palates of locals and visitors alike. <br>
+                    <br>
+                    
+                    <br>
+                    Kebapche is a delicious grilled sausage made from a combination of ground meat, typically a mix of beef and pork, seasoned with aromatic herbs and spices.<br>
+                    The meat is shaped into elongated cylindrical forms and grilled to perfection, resulting in a juicy and flavorful delight. <br>
+                    <br>
+                    
+                    <br>
+                    The kebapche is known for its mouthwatering taste. The combination of high-quality meat, carefully selected spices like cumin and paprika, and expert grilling techniques creates a delectable experience for your taste buds. 
+                    The outer layer becomes slightly crispy, while the inside remains tender and juicy, providing a delightful texture with every bite.
+                    <img src="./../images/kebapche.jpg" class="kebapcheimg">
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="maincut">
+                <h3 style="text-decoration: underline; font-size: 25px;">Shopska salata</h3>
+                <p class="shopska">
+                    The Shopska salad is a traditional Bulgarian dish that is popular throughout the Balkan region. It is named after the Shopi people, an ethnic group in Bulgaria. <br>
+                    This salad is a refreshing and colorful mix of fresh vegetables and feta cheese, typically served as an appetizer or a side dish. <br>
+                    <br>
+                    The main ingredients of the Shopska salad include ripe tomatoes, cucumbers, bell peppers, onions, and feta cheese. <br>
+                    The vegetables are diced or chopped into small pieces and combined in a bowl. The salad is often garnished with parsley or dill for added freshness and flavor. <br>
+                    <br>
+                    The Shopska salad is not only delicious but also nutritious. It is packed with vitamins, minerals, and antioxidants from the fresh vegetables. <br> 
+                    The feta cheese provides protein and calcium. The combination of flavors and textures makes it a light and satisfying dish that is perfect for summer or as a refreshing addition to any meal. <br>
+                    <img src="./../images/shopska.jpg" class="shopskaimg">
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="maincut">   
+                <h3 style="text-decoration: underline; font-size: 25px;">The holy grail</h3>
+                <p class="kebapcheparagraph">
+                    Rakija, the holy grail of Southeastern Europe, is a potent fruit brandy that embodies tradition, heritage, and warm hospitality. 
+                    Crafted through meticulous distillation, this golden elixir carries the essence of plums, grapes, or other fruits, resulting in a flavorful and fiery spirit.
+                     Its high alcohol content gives it a spirited kick, making it a cherished companion for joyful celebrations and heartfelt toasts. 
+                     With each sip, rakija weaves together centuries of tradition and a taste that lingers on the palate, symbolizing the cultural richness and camaraderie of the Balkan lands.
+                    <img src="./../images/rakija.jpg" class="kebapcheimg">
+                </p>
+            </div>
+        </section>
+
+        <!--             SCRIPT             -->
+
+            <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+            </script>
+    </body>
 </html>
