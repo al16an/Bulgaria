@@ -343,7 +343,7 @@ h3{
     font-size: 45px;
 }
 .kebapcheimg{
-    display: block;
+    display: flex;
     flex-direction: row;
     flex-basis: 31%;  
     border-radius: 30px;
@@ -394,7 +394,45 @@ h3{
 .ofrstxt{
     font-style: oblique;
 }
-
+hr{
+    height: 3px;
+    border: 0px none;
+    border-top: 3px rgb(0, 255, 4) solid;
+    background: rgb(255, 0, 0);
+}
+article.shopska {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.mid{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: row-reverse;
+    align-items: normal;
+    font-style: oblique;
+}
+.goldenage{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        font-style: oblique;
+}
+.goldimg{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 31%;
+    border-radius: 30px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
 @media(max-width : 700px){
     .text-box h1{
         font-size: 25px;
@@ -456,5 +494,21 @@ h3{
         font-weight: 300;
         line-height: 22px;
         padding: 10px;
+    }
+    article.shopska {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .goldenage {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        font-style: oblique;
+    }
+    .goldimg{
+        height: 231px;
+        width: 320px;
     }
 }
