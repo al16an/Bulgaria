@@ -1,13 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./../main.css'>
-</head>
-<body>
-    Working
-</body>
+    <head>
+        <meta charset='utf-8'>
+        <title>Bulgaria's nature</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./../main.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section class="headernature">
+        <nav>
+            <a href="./../index.htm"><img src="./../images/logo.png"style="padding-top: 15px;padding-left: 5px;"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                 <ul>
+                    <li><a class="bqlo" href="./../index.htm">HOME</a></li>
+                    <li><a class="zeleno" href="#">ABOUT</a></li>
+                    <li><a class="cherveno" href="./../Nature/nature.htm">NATURE</a></li>
+                    <li><a class="bqlo" href="./../History/history.htm">HISTORY</a></li>
+                    <li><a class="zeleno" href="./../Culture/cult.htm">CULTURE</a></li>
+                    <li><a class="cherveno" href="./../Cuisine/cuisine.htm">CUISINE</a></li>
+                 </ul>
+            </div>
+            <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <div class="text-box">
+                <h1>Bulgaria's nature</h1>
+                <p>
+                    Unleash your spirit of adventure amidst Bulgaria's stunning nature!
+                    From majestic mountains to serene lakes and captivating coastlines, this Balkan gem boasts a wealth of natural wonders. 
+                    Hike through picturesque landscapes, soak in breathtaking views, and encounter diverse flora and fauna. <br></p>
+                <a href="#mainsec" class="buttn"> Click here to immerse yourself in the untamed beauty of Bulgaria's nature and embark on an unforgettable outdoor escapade.</a>
+            </div>
+        </section>
+
+
+        <section class="mainsec" id="mainsec">
+            <div class="maincut">
+                <h1 style="color: rgba(43, 255, 0, 0.7); font-size: 35px;">The Bulgarian beauty</h1> <br>    
+                <h3 style="text-decoration: underline; font-size: 25px;">Main information</h3>
+                <p class="hanasparuh">               
+                Bulgaria, located in southeastern Europe, is blessed with a diverse and captivating natural landscape. Nestled between the Balkan Mountains and the Black Sea, the country showcases a rich tapestry of natural wonders that never fail to awe its visitors. <br>
+                <br>
+                Its enchanting nature ranges from rugged mountains and lush forests to serene lakes and picturesque coastlines. <br>
+                <br>
+                The awe-inspiring Rila, Pirin, and Rhodope mountain ranges dominate the southwestern part of the country, offering breathtaking alpine vistas, pristine glacial lakes, and challenging hiking trails.
+                <br>
+                <br>
+                    <hr>
+                </p>
+                <p class="kebapcheparagraph">
+                    These mountains are home to a variety of flora and fauna, including rare species such as the Balkan chamois and the brown bear. <br> 
+                    Moving eastward, the Danube River forms a natural border with Romania, featuring serene wetlands and meandering channels that support an abundance of bird species, making it a paradise for birdwatchers. <br>
+                    <br>
+                    <img src="./../images/rila.jpg" class="kebapcheimg">
+                    <br>
+                    
+                </p>
+                <hr>
+            </div>
+        </section>
+
+        <section class="mainsec">
+            <div class="maincut">
+                <h3 style="text-decoration: underline; font-size: 25px;">Bulgaria's coastline.</h3>
+                <article class="goldenage">
+                <p class="mid">
+                    The Bulgarian coastline, stretching along the Black Sea, boasts sandy beaches, secluded coves, and vibrant resorts like Sunny Beach and Golden Sands.
+                    Bulgaria's coastline along the Black Sea offers a captivating blend of natural beauty and seaside charm. Stretching for around 378 kilometers, it presents a diverse tapestry of sandy beaches, tranquil bays, and picturesque cliffs.
+                 <br>
+                </p>
+                <img src="./../images/beach.jpg" class="goldimg">
+                <p class="mid">
+                    The coastline is adorned with a plethora of vibrant resorts, such as Sunny Beach and Golden Sands, which attract visitors with their lively atmosphere, luxurious hotels, and a myriad of entertainment options. Along the shores, visitors can indulge in various water sports, bask in the warm sun, or explore the hidden coves and caves that dot the coastline. 
+                    From bustling beaches to secluded stretches of sand, Bulgaria's coastline captivates with its scenic vistas, offering an enticing invitation to unwind, relax, and enjoy the enchanting allure of the Black Sea.</p>
+                </article>
+                <hr>
+            </div>
+        </section>
+
+        <section>
+            <div class="maincut">   
+                <h3 style="text-decoration: underline; font-size: 25px;">Summary</h3>
+                <p class="kebapcheparagraph">
+                    In summary, Bulgaria's nature is a treasure trove of diverse landscapes, from majestic mountains and pristine coastlines to enchanting caves and therapeutic springs. Its abundant flora and fauna, coupled with numerous outdoor activities, make it a destination that appeals to nature lovers, adventure seekers, and those seeking tranquility in a captivating natural environment.
+                    <img src="./../images/pametnik.jpg" class="kebapcheimg">
+                </p>
+            </div>
+        </section>
+
+        <!--             SCRIPT             -->
+
+            <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+            </script>
+    </body>
 </html>

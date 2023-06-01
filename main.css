@@ -33,6 +33,24 @@ html{
     position: relative;
     overflow: hidden;
 }
+.headernature{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(20, 4, 30, 0.7),rgba(20, 4, 30, 0.7)),url(./images/nature.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.headerculture{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(30, 30, 4, 0.7),rgba(20, 4, 30, 0.7)),url(./images/culturemain.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
 nav{
     display: flex;
     padding: 2% 6%;
